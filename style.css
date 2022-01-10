@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Jost:wght@600&family=Poppins&family=Rubik:wght@500&family=Source+Sans+3:wght@900&family=Source+Sans+Pro:wght@600&family=The+Nautigal:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+section{
+    position: relative;
+    background: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+}
+section.dark
+{
+    background: #24292d;
+}
+section .card{
+    position: relative;
+    width: 300px;
+    height: 380px;
+    background: #e0e0e0;
+    box-shadow: 0 15px 15px rbga(0,0,0,.025);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     transition: background .5s;
+    background: #e0e0e070;
+    box-shadow:  12px 12px 60px #bebebe,
+     -12px -12px 60px #ffffff;
+     z-index: 101;
+
+}
+section.dark .card{
+    background: #32384044;
+  
+}
+section .card .content,
+section .card .imgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .card .imgText .imgBx{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 50%;
+background: linear-gradient(145deg, #dfdfdf, #cacaca);
+box-shadow:  12px 12px 65px #bebebe,
+     -12px -12px 65px #ffffff;
+    
+}
+section.dark .card .imgText .imgBx{
+    border-radius: 50%;
+background: linear-gradient(145deg, #444d56, #3a4148);
+box-shadow:  12px 12px 48px #363d44,
+     -12px -12px 48px #4a535c;
+
+}
+section .card .imgText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+section .card .imgText h3{
+    font-weight: 500;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: center;
+    color: #470077;
+}
+section.dark .card .imgText h3{
+    color: white;
+}
+section .card .imgText h3 span{
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-size: 0.75em;
+}
+section.dark .card .imgText h3 span{
+    color: #ccc;
+}
+section .card .sci{
+    display: flex;
+    margin-top: 15px;
+}
+section .card .sci li{
+    list-style: none;
+}
+
+section .card .sci li a{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: #e9f5ff;
+    color: #8900e4;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.5s;
+}
+section.dark .card .sci li a{
+    color: white;
+    background: #404850;
+}
+section.dark .card .sci li a{
+    
+}
+section .card .sci li a:hover{
+    color: #fff;
+}
+section .card .sci li a .fa{
+    position: relative;
+    z-index: 1000;
+}
+section .card .sci li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #8900e4;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.5s;
+}
+section .card .sci li a:hover::before{
+    transform: scale(1);
+}
+.toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #e9f5ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.toggle::before{
+    content: "\f186";
+    font-family: fontAwesome;
+    color: #8900e4;
+
+}
+
+section.dark .toggle::before{
+    content: "\f185";
+    color: #fff;
+
+}
+section.dark .toggle{
+    background: #404852;
+}
+
+
+
+/* .,,,,,,,,,,,,,,,,,,,,, */
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 100;
+}
+.frm1{
+    width: 200px;
+    height: 200px;
+    background: magenta;
+    position: absolute;
+    top: 0px;
+    left: 550px;
+    filter: blur(150px);
+
+}
+.frm2{
+    width: 200px;
+    height: 200px;
+    background: mediumvioletred;
+    position: absolute;
+    bottom: 60px;
+    left: 170px;
+    filter: blur(150px);
+}
+.frm5{
+    width: 300px;
+    height: 300px;
+    background: rgb(63, 21, 199);
+    position: absolute;
+    bottom: 0px;
+    right: 370px;
+    filter: blur(150px);
+}
